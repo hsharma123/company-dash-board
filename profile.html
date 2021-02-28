@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="font-awesome-4.7.0">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap/css/mdb.css">
+<link rel="stylesheet" href="bootstrap/css/style.css">
+<!--nav bar-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="font-awesome-4.7.0">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap/css/mdb.css">
+<link rel="stylesheet" href="bootstrap/css/style.css">
+<!--nav bar-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+        <a href="index.html" class="navbar-brand text-warning">Himanshu </a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#dash " aria-controls="himanshu mobiles" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="dash">
+            <ul class="navbar-nav">
+                <li class="nav-item px-3">
+                    <a href="index.html" class="nav-link">
+                        <i class="fa fa-bar-chart text-muted"></i>Dashboard</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href= "task.html" class="nav-link">
+                        <i class="fa fa-list text-muted"></i> Task</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="category.html" class="nav-link "><i class="fa fa-sitemap text-muted"></i>Category</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="employ.html" class="nav-link"><i class="text-muted fa fa-user"></i>Employees</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown px-3">
+                    <a href="#" class="nav-link" data-toggle="dropdown">
+                        <i class="fa fa-sign-in text-muted"></i>  Himanshu</a>
+                    <div class="dropdown-menu p-2">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fa fa-user-circle"></i>Profile</a>
+                        <a href="setting.html" class="dropdown-item">
+                            <i class="fa fa-cogs"></i>Setting</a>
+                    </div>
+                </li>
+                <li class="nav-item px-3">
+                    <a href= "login.html" class="nav-link">
+                        <i class="fa fa-sign-out text-muted"></i> LogOut</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--- profile bopard--->
+<section class="p-2 bg-teal text-white ">
+    <div class="container">
+        <div class="row animated flipInY">
+            <h1>
+                <i class="fa fa-user-circle">Profile</i>
+            </h1>
+        </div>
+    </div>
+</section>
+<! button section-->
+<section class="p-3 bg-light">
+    <div class="container">
+        <div class="row animated flipInX">
+            <div class="col-md-3">
+                <a href="index.html"class="btn btn-secondary btn-block">
+                 <i class="fa fa-arrow-circle-left">Dashboard</i>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <!-- empty-->
+            </div>
+            <div class="col-md-3">
+                <a href="index.html"class="btn btn-primary btn-block" data-toggle="modal"data-target="#password-modal">
+                    <i class="fa fa-lock">Update Password</i>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="index.html"class="btn btn-danger btn-block">
+                    <i class="fa fa-times-circle">Delete Account</i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- password modal-->
+
+<div class="modal"id="password-modal">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header bg-warning text-white">
+                <h3>Update Password</h3>
+                <button class="close"data-dismiss="modal">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body bg-light">
+                <form>
+                    <div class="form-group">
+                        <input type="password"class="form-control"placeholder=" old password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password"class="form-control" placeholder="new password">
+
+                    </div>
+                    <div class="form-group">
+                        <input type="password"class="form-control" placeholder="confirm password">
+
+                    </div>
+                    <div>
+                        <input type="submit" class="btn btn-warning"value="Update Password">
+                        <a href="#" data-dismiss="modal" class="btn btn-dark">Close</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- profile section-->
+<section class="p-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card animated jello">
+                    <div class="card-header bg-teal text-white">
+                        <h3>About Me</h3>
+                    </div>
+                    <div class="card-body bg-light">
+                        <div class="card">
+                            <div class="card-body">
+                            <h2>HIMANSHU SHARMA</h2>
+                        </div>
+                        </div>
+                            <div class="card mt-2">
+                                <div class="card-body">
+                                    <p class="lead">My name is himanshu sharma. i am from bihar. i completed my b.tech from punjab in punjab technical university in 2020.i completed my 10+2 in 2013 from gyan joyti residential public school. currently i am doing freelancing in front end development.recently i located in noida.</p>
+                                </div>
+                            </div>
+                                    <div class="card mt-2">
+                                        <div class="card-body">
+                                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aliquid autem esse et eum explicabo, fugiat minima molestiae nobis, non officia optio provident quo repellat sequi similique tempora ut!</p>
+                                        </div>
+                                    </div>
+                </div>
+                    <div class="card-footer">
+                        <h3>Thank You!</h3>
+                    </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card animated slideInUp">
+                    <div class="card-header bg-teal text-white text-center">
+                      <h5>HIMANSHU SHARMA</h5>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/himanshu.jpg" class="img-fluid img-thumbnail p-img">
+                        <div class="row">
+                        <div class="col">
+                            <button class="btn btn-primary btn-block mt-3">
+                                <i class="fa fa-pencil-square"></i> Edit Profile</button>
+                            <button class="btn btn-warning btn-block mt-3">
+                                <i class="fa fa-trash"></i> Delete Profile</button>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    </div>
+</section>
+
+<!-- main footer-->
+<footer class=" p-3 bg-dark text-white text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Copyright &copy; 2021, Himanshu Ui Tech.Com</h3>
+                <h6>All Right Reserved</h6>
+                <h6>Developed & Maintained BY
+                    <a href="https://github.com/hsharma123"class="text-warning" target="_blank">HIMANSHU SHARMA</a>
+                </h6>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/popper.js"></script>
+<script src="bootstrap/js/mdb.js"></script>
+<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+</body>
+</html>
